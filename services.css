@@ -1,0 +1,159 @@
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #003333, #000000);
+      color: #fff;
+      padding-bottom: 80px;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 15px 10px;
+    }
+
+    header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      margin: 5px 0;
+      font-size: 28px;
+    }
+
+    header p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 40px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .package, .service-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .text {
+      flex: 1;
+      min-width: 250px;
+      padding-right: 15px;
+    }
+
+    .text h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .text p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .image {
+      flex: 1;
+      min-width: 180px;
+      text-align: center;
+    }
+
+    .image img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+    }
+
+    .price {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .button, .download {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background: #fff;
+      color: #0074D9;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .button:hover, .download:hover {
+      background: #0074D9;
+      color: #fff;
+    }
+
+    .downloads {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .downloads a {
+      display: block;
+      margin: 10px auto;
+      width: 220px;
+    }
+
+    /* Bottom Nav */
+   .bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 2px solid #fff;
+  z-index: 10;
+}
+
+.bottom-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.bottom-nav a.active {
+  text-decoration: underline;
+}
+    @media (max-width: 768px) {
+      .package, .service-block {
+        flex-direction: column;
+        text-align: center;
+      }
+      .text {
+        padding: 0;
+      }
+    }
+
+.package-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+.package-list li {
+  margin: 5px 0;
+  font-size: 14px;
+}
