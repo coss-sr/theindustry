@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - The View Industry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="gallery-header">
+    <img src="images/The Industry.png" alt="The View Industry Logo" class="logo">
+    <h1 class="headline">INDUSTRY GALLERY</h1>
+  </header>
+
+  <!-- SECTION 0: BEST WORKS -->
+  <section class="best-works" id="section0">
+    <h2>🏆 Best Works (Pigia Kura Picha yako pendwa)</h2>
+    <div class="winner-showcase">
+      <img src="images/Votes/coss63.jpg" alt="Winner Image" class="winner-img">
+      <p class="winner-caption">Chaguo la hivi Karibuni: “ September Masterpiece ”</p>
+    </div>
+
+    <div class="vote-container">
+    <div class="vote-item">
+      <img src="images/Votes/farhat3.jpg" alt="Best Work 1">
+      <div class="vote-controls">
+        <button onclick="vote(this)">Vote 👍</button>
+        <span class="vote-count">0</span>
+      </div>
+    </div>
+
+    <div class="vote-item">
+      <img src="images/Votes/mwita7.jpg" alt="Best Work 2">
+      <div class="vote-controls">
+        <button onclick="vote(this)">Vote 👍</button>
+        <span class="vote-count">0</span>
+      </div>
+    </div>
+
+    <div class="vote-item">
+      <img src="images/Votes/nancy1.jpg" alt="Best Work 3">
+      <div class="vote-controls">
+        <button onclick="vote(this)">Vote 👍</button>
+        <span class="vote-count">0</span>
+      </div>
+    </div>
+  </div>
+
+  <button id="resetVotesBtn" onclick="resetVotes()">Reset Votes</button>
+
+</section>
+
+  <!-- SECTION 1: VIDEOS -->
+  <section class="videos" id="section1">
+    <h2>🎬 Videos</h2>
+    <div class="video-grid">
+      <div class="video-box">
+        <video controls>
+          <source src="video/Joan Nite_Official_Video.mp4" type="video/mp4">
+      
+        </video>
+        <p class="caption">Joan Night Highlights</p>
+      </div>
+      <div class="video-box">
+        <video controls>
+          <source src="video/DUBAI 1.mp4" type="video/mp4">
+      
+        </video>
+        <p class="caption">Inside The Industry</p>
+      </div>
+      <div class="video-box">
+        <video controls>
+          <source src="video/VIDA_SEND OFF.mp4" type="video/mp4">
+     
+        </video>
+        <p class="caption">Pendwa zetu</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTIONS -->
+  <section class="gallery-section" id="recents">
+    <h2>Recents</h2>
+    <div class="gallery-item">
+  <img src="images/RECENTS/angel3.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/RECENTS/Aliel1.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/RECENTS/farhat3.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/RECENTS/shem2.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/RECENTS/nancy1.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/RECENTS/shem1.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+  </section>
+
+  <section class="gallery-section" id="alltime">
+    <h2>Of All Time</h2>
+    <div class="gallery-item">
+  <img src="images/OF ALL TIME/p 67.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/OF ALL TIME/_MG_3449.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/OF ALL TIME/mw20.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/OF ALL TIME/rin 7.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/OF ALL TIME/Asnath (5).jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/OF ALL TIME/m 6.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Best of 2025</h2>
+    <div class="gallery-item">
+  <img src="images/25/mi1.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/25/mwita7.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/25/mwita8.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/25/Asnath (5).jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/25/coss63.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/25/Aliel1.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Best of 2024</h2>
+    <div class="gallery-item">
+  <img src="images/24/rinda2.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/24/sh5.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/24/s 77.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/24/misha102.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/24/masha5.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/24/kim2.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Best of 2023</h2>
+    <div class="gallery-item">
+  <img src="images/23/kadomi.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/23/kb7.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/23/aber 4.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/23/esma1.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/23/katoto12.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/23/ab 13.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Best of 2022</h2>
+    <div class="gallery-item">
+  <img src="images/22/_MG_4111.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/22/_MG_2793.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/22/_MG_4147.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/22/_MG_6509.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/22/f1.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+      <div class="gallery-item">
+  <img src="images/22/f4.jpg" alt="Gallery Image">
+  <div class="like-container">
+    <button class="like-btn">❤️</button>
+    <span class="like-count">0</span>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <!-- BOTTOM NAVIGATION -->
+  <nav class="bottom-nav">
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+  </nav>
+
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Load saved votes when page opens
+  document.querySelectorAll(".vote-item").forEach((item, index) => {
+    const countElement = item.querySelector(".vote-count");
+    const savedVotes = localStorage.getItem("vote_" + index);
+    if (savedVotes) countElement.textContent = savedVotes;
+  });
+});
+
+function vote(button) {
+  const countElement = button.nextElementSibling;
+  let current = parseInt(countElement.textContent);
+  current++;
+  countElement.textContent = current;
+
+  // Save votes locally
+  const index = [...document.querySelectorAll(".vote-item")].indexOf(button.closest(".vote-item"));
+  localStorage.setItem("vote_" + index, current);
+}
+</script>
+<script>
+  document.querySelectorAll('.like-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('liked');
+      const countSpan = btn.nextElementSibling;
+      let count = parseInt(countSpan.textContent);
+      if (btn.classList.contains('liked')) count++;
+      else count--;
+      countSpan.textContent = count;
+    });
+  });
+</script>
+<script>
+// Hide reset button automatically
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("resetVotesBtn");
+  if (btn) btn.style.display = "none";
+});
+
+// SECRET ACCESS — press R to activate admin mode
+document.addEventListener("keydown", function(e) {
+  if (e.key === "r" || e.key === "R") {
+    let pass = prompt("Enter Admin Password:");
+
+    if (pass === "resetbutton") {
+      const btn = document.getElementById("resetVotesBtn");
+      if (btn) {
+        btn.style.display = "block";
+        alert("ADMIN MODE ACTIVATED");
+      }
+    }
+  }
+});
+
+// Reset Votes Function
+function resetVotes() {
+  if (confirm("Are you sure you want to reset all votes?")) {
+    localStorage.clear();
+    alert("Votes Reset Successfully!");
+    location.reload();
+  }
+}
+</script>
+
+</body>
+</html>
